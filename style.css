@@ -1,0 +1,89 @@
+* {
+  /*reset*/
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(146, 112, 112);
+  color: white;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.navBar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.navBar ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.navBar ul li {
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.navBar ul li a:hover {
+  color: skyblue;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+section#home {
+  background: url("./home.jpg") no-repeat center center/cover;
+}
+
+section#about {
+  background: url("./about.webp") no-repeat center center/cover;
+}
+
+section#work {
+  background: url("./work.webp") no-repeat center center/cover;
+}
+
+section#contact {
+  background: url("./contact.webp") no-repeat center center/cover;
+}
